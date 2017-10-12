@@ -19,64 +19,39 @@
 	    <title>Online Shop Price</title>
 
 	    <!-- Bootstrap Core CSS -->
-	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="http://static.onlineshopprice.in/css/bootstrap.min.css">
 
 	    <!-- Customizable CSS -->
-	    <link rel="stylesheet" href="assets/css/style.css">
-	    <link rel="stylesheet" href="assets/css/colors/blue.css">
-	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/css/owl.transitions.css">
-		<link rel="stylesheet" href="assets/css/animate.min.css">
-		
-  <!--  Added as part of Customization -->
-		
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- 
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  
-   <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" href="http://static.onlineshopprice.in/css/style.css">
+	    <link rel="stylesheet" href="http://static.onlineshopprice.in/css//colors/blue.css">
+	    <link rel="stylesheet" href="http://static.onlineshopprice.in/css/owl.carousel.css">
+		<link rel="stylesheet" href="http://static.onlineshopprice.in/css/owl.transitions.css">
+		<link rel="stylesheet" href="http://static.onlineshopprice.in/css/animate.min.css">		
+ 		<!--  Added as part of Customization -->  
+  		<link rel="stylesheet" href="http://static.onlineshopprice.in/css/font-awesome.min.css">  
+  		<link rel="stylesheet" href="http://static.onlineshopprice.in/css/material-icons.css">    
     <!-- Bootstrap theme -->
-    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-	
+    <link href="http://static.onlineshopprice.in/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->	
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-
+	<link rel="stylesheet" type="text/css" href="http://static.onlineshopprice.in/css/custom.css">
     <!-- Custom styles for this template -->
-    <link href="assets/css/theme.css" rel="stylesheet">
-		
-		
+    <link href="http://static.onlineshopprice.in/css/theme.css" rel="stylesheet">		
 	<!-- End Customization -->	
+	<!-- Fonts -->
+	<link href='http://static.onlineshopprice.in/css/open-sans-font-family.css' rel='stylesheet' type='text/css'>
+	<!-- Icons/Glyphs -->
+	<link rel="stylesheet" href="http://static.onlineshopprice.in/css/font-awesome.min.css">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="http://static.onlineshopprice.in/images/favicon.ico">
+		
+	<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
 
-	    <!-- Fonts -->
-		<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
-
-		<!-- Icons/Glyphs -->
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
-
-		<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5shiv.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
-
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-52598430-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+		
 	</head>
 
     <body>
@@ -244,94 +219,7 @@
                                     <a href="#"><i class="fa fa-exchange"></i> compare <span class="value">(2)</span> </a>
                                 </div>
                             </div>
-                            <!-- ============================================================= SHOPPING CART DROPDOWN ============================================================= -->
-                        <!--   <div class="top-cart-holder dropdown animate-dropdown">
-                                <div class="basket">
-
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                        <div class="basket-item-count">
-                                            <span class="count">3</span>
-                                            <img src="assets/images/icon-cart.png" alt="" />
-                                        </div>
-
-                                        <div class="total-price-basket">
-                                            <span class="lbl">your cart:</span>
-                                            <span class="total-price">
-                                                <span class="sign">$</span><span class="value">3219,00</span>
-                                            </span>
-                                        </div>
-                                    </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <div class="basket-item">
-                                                <div class="row">
-                                                    <div class="col-xs-4 col-sm-4 no-margin text-center">
-                                                        <div class="thumb">
-                                                            <img alt="" src="assets/images/products/product-small-01.jpg" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-8 col-sm-8 no-margin">
-                                                        <div class="title">Blueberry</div>
-                                                        <div class="price">$270.00</div>
-                                                    </div>
-                                                </div>
-                                                <a class="close-btn" href="#"></a>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="basket-item">
-                                                <div class="row">
-                                                    <div class="col-xs-4 col-sm-4 no-margin text-center">
-                                                        <div class="thumb">
-                                                            <img alt="" src="assets/images/products/product-small-01.jpg" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-8 col-sm-8 no-margin">
-                                                        <div class="title">Blueberry</div>
-                                                        <div class="price">$270.00</div>
-                                                    </div>
-                                                </div>
-                                                <a class="close-btn" href="#"></a>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="basket-item">
-                                                <div class="row">
-                                                    <div class="col-xs-4 col-sm-4 no-margin text-center">
-                                                        <div class="thumb">
-                                                            <img alt="" src="assets/images/products/product-small-01.jpg" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-8 col-sm-8 no-margin">
-                                                        <div class="title">Blueberry</div>
-                                                        <div class="price">$270.00</div>
-                                                    </div>
-                                                </div>
-                                                <a class="close-btn" href="#"></a>
-                                            </div>
-                                        </li>
-
-                                        <li class="checkout">
-                                            <div class="basket-item">
-                                                <div class="row">
-                                                    <div class="col-xs-12 col-sm-6">
-                                                        <a href="cart.html" class="le-button inverse">View cart</a>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-6">
-                                                        <a href="checkout.html" class="le-button">Checkout</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div><!-- /.basket -->
-                            </div><!-- /.top-cart-holder -->
-                        </div><!-- /.top-cart-row-container -->
-                        <!-- ============================================================= SHOPPING CART DROPDOWN : END ============================================================= -->
+                          
                     </div><!-- /.top-cart-row -->
                 </div><!-- /.container -->
 
@@ -620,24 +508,24 @@
         </div><!-- /.wrapper -->
 
     	<!-- JavaScripts placed at the end of the document so the pages load faster -->
-    	<script src="assets/js/jquery-1.10.2.min.js"></script>
-    	<script src="assets/js/jquery-migrate-1.2.1.js"></script>
-    	<script src="assets/js/bootstrap.min.js"></script>
-    	<script src="//maps.google.com/maps/api/js?key=AIzaSyDDZJO4F0d17RnFoi1F2qtw4wn6Wcaqxao&sensor=false&amp;language=en"></script>
-    	<script src="assets/js/gmap3.min.js"></script>
-    	<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
-    	<script src="assets/js/owl.carousel.min.js"></script>
-    	<script src="assets/js/css_browser_selector.min.js"></script>
-    	<script src="assets/js/echo.min.js"></script>
-    	<script src="assets/js/jquery.easing-1.3.min.js"></script>
-    	<script src="assets/js/bootstrap-slider.min.js"></script>
-        <script src="assets/js/jquery.raty.min.js"></script>
-        <script src="assets/js/jquery.prettyPhoto.min.js"></script>
-        <script src="assets/js/jquery.customSelect.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/buttons.js"></script>
-    	<script src="assets/js/scripts.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/jquery-1.10.2.min.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/jquery-migrate-1.2.1.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/bootstrap.min.js"></script>
+  <!--  <script src="//maps.google.com/maps/api/js?key=AIzaSyDDZJO4F0d17RnFoi1F2qtw4wn6Wcaqxao&sensor=false&amp;language=en"></script> 
+    	<script src="http://static.onlineshopprice.in/js/gmap3.min.js"></script>-->
+    	<script src="http://static.onlineshopprice.in/js/bootstrap-hover-dropdown.min.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/owl.carousel.min.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/css_browser_selector.min.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/echo.min.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/jquery.easing-1.3.min.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/bootstrap-slider.min.js"></script>
+        <script src="http://static.onlineshopprice.in/js/jquery.raty.min.js"></script>
+        <script src="http://static.onlineshopprice.in/js/jquery.prettyPhoto.min.js"></script>
+        <script src="http://static.onlineshopprice.in/js/jquery.customSelect.min.js"></script>
+        <script src="http://static.onlineshopprice.in/js/wow.min.js"></script>
+        <script src="http://static.onlineshopprice.in/js/buttons.js"></script>
+    	<script src="http://static.onlineshopprice.in/js/scripts.js"></script>
     	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    
     </body>
 </html>

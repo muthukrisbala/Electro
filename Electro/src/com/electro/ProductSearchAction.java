@@ -38,7 +38,7 @@ public class ProductSearchAction extends ActionSupport implements ServletRequest
 	//business logic
 	public String execute() {
 		
-		String productName = getServletRequest().getParameter("name");
+		String productName = getServletRequest().getParameter("name");	
 		
 		 OSPdao dao=new OSPdao();
 		 ProductDo productdo=new ProductDo();
