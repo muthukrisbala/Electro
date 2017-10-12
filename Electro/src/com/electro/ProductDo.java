@@ -31,6 +31,34 @@ public class ProductDo {
 	public String fp_Image2;
 	
 	
+	
+	public String am_Title;
+	public String am_ProductDescription;
+	public String am_ImageUrl;
+	public String am_ImageUr2;
+	public String am_ImageUr3;        
+	public String  am_ProductFamily;
+	public String  am_MaximumRetailPrice;
+	public String am_SellingPrice;
+	public String am_SpecialPrice;
+	public String am_ProductUrl;
+	public String am_ProductBrand;
+	public boolean am_inStock;
+	public boolean am_CodAvailable;
+	public String am_DiscountPercentage;
+	public String am_Offers;
+	public String am_size;
+	public String am_Color;
+	public String am_Storage;
+	public String am_SizeUnit;
+	public String am_Display;
+	public String am_RAM;
+	public String am_FrontCamera;
+	public String am_RearCamera;
+	public String am_Battery;
+	public String am_Image2;
+	
+	
 	public String getProductId() {
 		return productId;
 	}
@@ -186,6 +214,156 @@ public class ProductDo {
 	}
 	public void setFp_Image2(String fp_Image2) {
 		this.fp_Image2 = fp_Image2;
+	}
+	public String getAm_Title() {
+		return am_Title;
+	}
+	public void setAm_Title(String am_Title) {
+		this.am_Title = am_Title;
+	}
+	public String getAm_ProductDescription() {
+		return am_ProductDescription;
+	}
+	public void setAm_ProductDescription(String am_ProductDescription) {
+		this.am_ProductDescription = am_ProductDescription;
+	}
+	public String getAm_ImageUrl() {
+		return am_ImageUrl;
+	}
+	public void setAm_ImageUrl(String am_ImageUrl) {
+		this.am_ImageUrl = am_ImageUrl;
+	}
+	public String getAm_ImageUr2() {
+		return am_ImageUr2;
+	}
+	public void setAm_ImageUr2(String am_ImageUr2) {
+		this.am_ImageUr2 = am_ImageUr2;
+	}
+	public String getAm_ImageUr3() {
+		return am_ImageUr3;
+	}
+	public void setAm_ImageUr3(String am_ImageUr3) {
+		this.am_ImageUr3 = am_ImageUr3;
+	}
+	public String getAm_ProductFamily() {
+		return am_ProductFamily;
+	}
+	public void setAm_ProductFamily(String am_ProductFamily) {
+		this.am_ProductFamily = am_ProductFamily;
+	}
+	public String getAm_MaximumRetailPrice() {
+		return am_MaximumRetailPrice;
+	}
+	public void setAm_MaximumRetailPrice(String am_MaximumRetailPrice) {
+		this.am_MaximumRetailPrice = am_MaximumRetailPrice;
+	}
+	public String getAm_SellingPrice() {
+		return am_SellingPrice;
+	}
+	public void setAm_SellingPrice(String am_SellingPrice) {
+		this.am_SellingPrice = am_SellingPrice;
+	}
+	public String getAm_SpecialPrice() {
+		return am_SpecialPrice;
+	}
+	public void setAm_SpecialPrice(String am_SpecialPrice) {
+		this.am_SpecialPrice = am_SpecialPrice;
+	}
+	public String getAm_ProductUrl() {
+		return am_ProductUrl;
+	}
+	public void setAm_ProductUrl(String am_ProductUrl) {
+		this.am_ProductUrl = am_ProductUrl;
+	}
+	public String getAm_ProductBrand() {
+		return am_ProductBrand;
+	}
+	public void setAm_ProductBrand(String am_ProductBrand) {
+		this.am_ProductBrand = am_ProductBrand;
+	}
+	public boolean isAm_inStock() {
+		return am_inStock;
+	}
+	public void setAm_inStock(boolean am_inStock) {
+		this.am_inStock = am_inStock;
+	}
+	public boolean isAm_CodAvailable() {
+		return am_CodAvailable;
+	}
+	public void setAm_CodAvailable(boolean am_CodAvailable) {
+		this.am_CodAvailable = am_CodAvailable;
+	}
+	public String getAm_DiscountPercentage() {
+		return am_DiscountPercentage;
+	}
+	public void setAm_DiscountPercentage(String am_DiscountPercentage) {
+		this.am_DiscountPercentage = am_DiscountPercentage;
+	}
+	public String getAm_Offers() {
+		return am_Offers;
+	}
+	public void setAm_Offers(String am_Offers) {
+		this.am_Offers = am_Offers;
+	}
+	public String getAm_size() {
+		return am_size;
+	}
+	public void setAm_size(String am_size) {
+		this.am_size = am_size;
+	}
+	public String getAm_Color() {
+		return am_Color;
+	}
+	public void setAm_Color(String am_Color) {
+		this.am_Color = am_Color;
+	}
+	public String getAm_Storage() {
+		return am_Storage;
+	}
+	public void setAm_Storage(String am_Storage) {
+		this.am_Storage = am_Storage;
+	}
+	public String getAm_SizeUnit() {
+		return am_SizeUnit;
+	}
+	public void setAm_SizeUnit(String am_SizeUnit) {
+		this.am_SizeUnit = am_SizeUnit;
+	}
+	public String getAm_Display() {
+		return am_Display;
+	}
+	public void setAm_Display(String am_Display) {
+		this.am_Display = am_Display;
+	}
+	public String getAm_RAM() {
+		return am_RAM;
+	}
+	public void setAm_RAM(String am_RAM) {
+		this.am_RAM = am_RAM;
+	}
+	public String getAm_FrontCamera() {
+		return am_FrontCamera;
+	}
+	public void setAm_FrontCamera(String am_FrontCamera) {
+		this.am_FrontCamera = am_FrontCamera;
+	}
+	public String getAm_RearCamera() {
+		return am_RearCamera;
+	}
+	public void setAm_RearCamera(String am_RearCamera) {
+		this.am_RearCamera = am_RearCamera;
+	}
+	public String getAm_Battery() {
+		return am_Battery;
+	}
+	public void setAm_Battery(String am_Battery) {
+		this.am_Battery = am_Battery;
+	}
+	public String getAm_Image2() {
+		return am_Image2;
+	}
+	public void setAm_Image2(String am_Image2) {
+		this.am_Image2 = am_Image2;
 	}
 	
 	

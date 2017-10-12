@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class OSPdao {
 	
 	
-public   ProductDo main(String args) {
+public   ProductDo main(String productName) {
 	String title="Default Title";
 	   DBCursor cursor = null;
 	   ProductDo productdo=null;
@@ -38,7 +38,7 @@ public   ProductDo main(String args) {
          DBCollection table = db.getCollection("product");
 
          BasicDBObject searchQuery = new BasicDBObject();
-         searchQuery.put("fp_title", "Vivo Y69");
+         searchQuery.put("fp_title", productName);
 
           cursor = table.find(searchQuery);
 
@@ -57,6 +57,17 @@ public   ProductDo main(String args) {
             productdo.setFp_MaximumRetailPrice((String)dbobj.get("fp_listprice"));
             productdo.setFp_SellingPrice((String)dbobj.get("fp_offerprice"));
             productdo.setFp_Image2((String)dbobj.get("fp_image2"));
+            
+            productdo.setAm_Title((String) dbobj.get("am_title"));
+            productdo.setAm_Battery((String)dbobj.get("am_batery"));
+            productdo.setAm_Display((String)dbobj.get("am_display"));
+            productdo.setAm_FrontCamera((String)dbobj.get("am_front_camera"));
+            productdo.setAm_RearCamera((String)dbobj.get("am_rear_camera"));
+            productdo.setAm_RAM((String)dbobj.get("am_memory"));
+            productdo.setAm_Storage((String)dbobj.get("am_storage"));
+            productdo.setAm_MaximumRetailPrice((String)dbobj.get("am_listprice"));
+            productdo.setAm_SellingPrice((String)dbobj.get("am_offerprice"));
+            productdo.setAm_Image2((String)dbobj.get("am_image2"));
          }
          
       }catch(Exception e){

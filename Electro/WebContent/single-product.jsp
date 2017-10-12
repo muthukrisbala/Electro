@@ -1,5 +1,6 @@
 <%@page import="com.electro.ProductDo"%>
 <%@ page language="java"  %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <%@page import="com.electro.OSPDo"%>
 <%@page import="com.electro.OSPdao"%>
@@ -15,7 +16,7 @@
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
 
-	    <title>MediaCenter - Responsive eCommerce Template</title>
+	    <title>Online Shop Price</title>
 
 	    <!-- Bootstrap Core CSS -->
 	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -80,20 +81,7 @@
 
     <body>
     
-    <% OSPdao dao=new OSPdao();
-    ProductDo productdo=new ProductDo();
-    productdo=dao.main("str");
-       String title=productdo.getFp_Title();
-       String listPrice=productdo.getFp_MaximumRetailPrice(); 
-       String offerPrice=productdo.getFp_SellingPrice(); 
-       String memory=productdo.getFp_RAM(); 
-       String storage=productdo.getFp_Storage(); 
-       String display=productdo.getFp_Display(); 
-       String frontCamera=productdo.getFp_FrontCamera(); 
-       String rearCamera=productdo.getFp_RearCamera(); 
-       String battery=productdo.getFp_Battery();
-       String image2=productdo.getFp_Image2(); 
-     %>
+   
     	<div class="wrapper">
             <!-- ============================================================= TOP NAVIGATION ============================================================= -->
      <!--       <nav class="top-bar animate-dropdown">
@@ -431,7 +419,7 @@
 
                                 <div class="single-product-gallery-item" id="slide2">
                                     <a data-rel="prettyphoto" href="assets/images/products/product-gallery-01.jpg">
-                                        <img class="img-responsive" alt="" src=<%=image2 %> data-echo=<%=image2 %> />
+                                        <img class="img-responsive" alt="" src=<s:property value="fp_image2" /> data-echo=<s:property value="fp_image2" /> />
                                     </a>
                                 </div><!-- /.single-product-gallery-item -->
 
@@ -451,11 +439,11 @@
                                     </a>
 
                                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="1" href="#slide2">
-                                        <img width="67" alt="" src=<%=image2 %> data-echo=<%=image2 %> />
+                                        <img width="67" alt="" src=<s:property value="fp_image2" /> data-echo=<s:property value="fp_image2" /> />
                                     </a>
 
                                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide3">
-                                        <img width="67" alt="" src=<%=image2 %> data-echo=<%=image2 %> />
+                                        <img width="67" alt="" src=<s:property value="fp_image2" /> data-echo=<s:property value="fp_image2" /> />
                                     </a>
 
                                     <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="0" href="#slide1">
@@ -499,7 +487,7 @@
                         <div class="body">
                              
                             <div class="title"><a href="#"> 
-                             <%=title %></a></div>
+                             <s:property value="fp_title" /></a></div>
                             <div class="brand">sony</div>
 
                             <div class="social-row">
@@ -525,28 +513,28 @@
 				  <div class="row">
 					<div class="col-sm-4">
 					  <i class="material-icons">memory</i>
-					  <h6><%=memory %>GB RAM</h6>
+					  <h6><s:property value="fp_memory" />GB RAM</h6>
 					</div>
 					<div class="col-sm-4">
 					  <i class="material-icons">camera_front</i>
-					  <h6><%=frontCamera %>MP</h6>
+					  <h6><s:property value="fp_frontCamera" /> MP</h6>
 					</div>
 					
 					<div class="col-sm-4">
 					  <i class="material-icons">camera_rear</i>				  
-					  <h6><%=rearCamera %>MP</h6>
+					  <h6><s:property value="fp_rearCamera" /> MP</h6>
 					</div>
 					<div class="col-sm-4">
 					  <i class="material-icons">stay_current_portrait</i>
-					  <h6><%=display %> inch Screen</h6>
+					  <h6><s:property value="fp_display" /> inch Screen</h6>
 					</div>
 					<div class="col-sm-4">
 					  <i class="material-icons">battery_charging_full</i>
-					  <h6><%=battery %>mAh</h6>
+					  <h6><s:property value="fp_battery" /> mAh</h6>
 					</div>
 					<div class="col-sm-4">
 					  <i class="material-icons">sd_storage</i>
-					  <h6><%=storage %>GB</h6>
+					  <h6><s:property value="fp_storage" /> GB</h6>
 					</div>
 					</div>
 					 <div class="row">				
@@ -567,9 +555,8 @@
                     </div><!-- /.body-holder -->
                
 			<!--  ======================================== Customized Code ============================================ -->
-		<BR>
-		<BR>
-			<div class="col-sm-9 table-responsive" >
+		
+			<div style="margin-top: 15px;" class="col-sm-6 table-responsive" >
 			 <table class="table table-bordered">
 			<thead>
 			  <tr>
@@ -583,26 +570,19 @@
 			<tbody>
 			  <tr>
 				<td><img src="assets/images/flipkart_logo.jpg" width="120" height="40" /></td>
-				<td> Oppo F1s 3 GB RAM (32 GB Storage)
+				<td> <s:property value="fp_title"/>
 				
-				<td><%=offerPrice %></td>
+				<td><s:property value="fp_offerPrice" /></td>
 				<td><button type="button" class="btn btn-primary">Got to Flipkart</button></td>
 				
 			  </tr>
 			  <tr>
 				<td><img src="assets/images/amazon_logo.jpg" width="120" height="40" /></td>
-				<td> Oppo F1s 3 GB RAM (32 GB Storage)
+				<td> <s:property value="am_title"/>
 				
-				<td>13,000</td>
+				<td><s:property value="am_offerPrice" /></td>
 				<td><button type="button" class="btn btn-primary">Got to Amazon</button></td>
-			  </tr>
-			  <tr>
-				<td>Snapdeal</td>
-				<td> Oppo F1s 3 GB RAM (32 GB Storage)
-				
-				<td>13,000</td>
-				<td><button type="button" class="btn btn-primary">Got to Snapdeal</button></td>
-			  </tr>
+			  </tr>			 
 			</tbody>
 		</table>
 			</div>
@@ -612,242 +592,7 @@
 			 <!-- ========================================= Customized Code Ends ========================================= -->
 			
 
-            <!-- ========================================= RECENTLY VIEWED ========================================= -->
-            <section id="recently-reviewd" class="wow fadeInUp">
-            	<div class="container">
-            		<div class="carousel-holder hover">
-
-            			<div class="title-nav">
-            				<h2 class="h1">Recently Viewed</h2>
-            				<div class="nav-holder">
-            					<a href="#prev" data-target="#owl-recently-viewed" class="slider-prev btn-prev fa fa-angle-left"></a>
-            					<a href="#next" data-target="#owl-recently-viewed" class="slider-next btn-next fa fa-angle-right"></a>
-            				</div>
-            			</div><!-- /.title-nav -->
-
-            			<div id="owl-recently-viewed" class="owl-carousel product-grid-holder">
-            				<div class="no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-            						<div class="ribbon red"><span>sale</span></div>
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-11.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">LC-70UD1U 70" class aquos 4K ultra HD</a>
-            							</div>
-            							<div class="brand">Sharp</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to Cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class="no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-            						<div class="ribbon blue"><span>new!</span></div>
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-12.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">cinemizer OLED 3D virtual reality TV Video</a>
-            							</div>
-            							<div class="brand">zeiss</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class=" no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-13.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">s2340T23" full HD multi-Touch Monitor</a>
-            							</div>
-            							<div class="brand">dell</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class=" no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-            						<div class="ribbon blue"><span>new!</span></div>
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-14.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">kardon BDS 7772/120 integrated 3D</a>
-            							</div>
-            							<div class="brand">harman</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class=" no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-            						<div class="ribbon green"><span>bestseller</span></div>
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-15.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">netbook acer travel B113-E-10072</a>
-            							</div>
-            							<div class="brand">acer</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class=" no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-16.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">iPod touch 5th generation,64GB, blue</a>
-            							</div>
-            							<div class="brand">apple</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class=" no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-13.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">s2340T23" full HD multi-Touch Monitor</a>
-            							</div>
-            							<div class="brand">dell</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-
-            				<div class=" no-margin carousel-item product-item-holder size-small hover">
-            					<div class="product-item">
-            						<div class="ribbon blue"><span>new!</span></div>
-            						<div class="image">
-            							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-14.jpg" />
-            						</div>
-            						<div class="body">
-            							<div class="title">
-            								<a href="single-product.html">kardon BDS 7772/120 integrated 3D</a>
-            							</div>
-            							<div class="brand">harman</div>
-            						</div>
-            						<div class="prices">
-            							<div class="price-current text-right">$1199.00</div>
-            						</div>
-            						<div class="hover-area">
-            							<div class="add-cart-button">
-            								<a href="single-product.html" class="le-button">Add to cart</a>
-            							</div>
-            							<div class="wish-compare">
-            								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
-            								<a class="btn-add-to-compare" href="#">Compare</a>
-            							</div>
-            						</div>
-            					</div><!-- /.product-item -->
-            				</div><!-- /.product-item-holder -->
-            			</div><!-- /#recently-carousel -->
-
-            		</div><!-- /.carousel-holder -->
-            	</div><!-- /.container -->
-            </section><!-- /#recently-reviewd -->
-            <!-- ========================================= RECENTLY VIEWED : END ========================================= -->
-            <!-- ============================================================= FOOTER ============================================================= -->
+           <!-- ============================================================= FOOTER ============================================================= -->
             <footer id="footer" class="color-bg">
 
                 <div class="container">
@@ -863,7 +608,7 @@
                     <div class="container">
                         <div class="col-xs-12 col-sm-6 no-margin">
                             <div class="copyright">
-                                &copy; <a href="home.html">Media Center</a> - all rights reserved
+                                &copy; <a href="home.html">Online Shop Price</a> - all rights reserved
                             </div><!-- /.copyright -->
                         </div>
                         
